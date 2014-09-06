@@ -1,0 +1,100 @@
+﻿Build started 9/6/2014 1:15:07 PM.
+     1>Project "C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\DemoBox2D_vs2013.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../box2d/ /I../../..//oxygine/src /I../../../..//SDL/include /I../../..//oxygine/third_party/win32/pthreads/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ../src/example.cpp
+         example.cpp
+     1>c:\users\matt\desktop\oxygine-framework-with-sdl\oxygine-framework\oxygine\src\utils\stringutils.h(51): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(337) : see declaration of 'vsnprintf'
+                 c:\users\matt\desktop\oxygine-framework-with-sdl\oxygine-framework\oxygine\src\serialize.h(46) : see reference to function template instantiation 'size_t oxygine::safe_sprintf<255>(char (&)[255],const char *,...)' being compiled
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../..//oxygine/third_party/win32/libraries /LIBPATH:../../..//libs libjpeg.lib libpng.lib libzlib.lib opengl32.lib pthreadVCE2.lib SDL2.lib SDL2main.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.lib" /MACHINE:X86 Debug\Box2DDebugDraw.obj
+         Debug\entry_point.obj
+         Debug\example.obj
+         Debug\b2BroadPhase.obj
+         Debug\b2CollideCircle.obj
+         Debug\b2CollideEdge.obj
+         Debug\b2CollidePolygon.obj
+         Debug\b2Collision.obj
+         Debug\b2Distance.obj
+         Debug\b2DynamicTree.obj
+         Debug\b2TimeOfImpact.obj
+         Debug\b2CircleShape.obj
+         Debug\b2EdgeShape.obj
+         Debug\b2LoopShape.obj
+         Debug\b2PolygonShape.obj
+         Debug\b2BlockAllocator.obj
+         Debug\b2Draw.obj
+         Debug\b2Math.obj
+         Debug\b2Settings.obj
+         Debug\b2StackAllocator.obj
+         Debug\b2Timer.obj
+         Debug\b2Body.obj
+         Debug\b2ContactManager.obj
+         Debug\b2Fixture.obj
+         Debug\b2Island.obj
+         Debug\b2World.obj
+         Debug\b2WorldCallbacks.obj
+         Debug\b2CircleContact.obj
+         Debug\b2Contact.obj
+         Debug\b2ContactSolver.obj
+         Debug\b2EdgeAndCircleContact.obj
+         Debug\b2EdgeAndPolygonContact.obj
+         Debug\b2LoopAndCircleContact.obj
+         Debug\b2LoopAndPolygonContact.obj
+         Debug\b2PolygonAndCircleContact.obj
+         Debug\b2PolygonContact.obj
+         Debug\b2DistanceJoint.obj
+         Debug\b2FrictionJoint.obj
+         Debug\b2GearJoint.obj
+         Debug\b2Joint.obj
+         Debug\b2MouseJoint.obj
+         Debug\b2PrismaticJoint.obj
+         Debug\b2PulleyJoint.obj
+         Debug\b2RevoluteJoint.obj
+         Debug\b2RopeJoint.obj
+         Debug\b2WeldJoint.obj
+         Debug\b2WheelJoint.obj
+         Debug\b2Rope.obj
+         ..\lib\myo32.lib
+         ..\lib\myo64.lib
+         "C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\oxygine_vs2013_d.lib"
+     1>Box2DDebugDraw.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+            Creating library C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.lib and object C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.exp
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>Box2DDebugDraw.obj : warning LNK4217: locally defined symbol _glDisableVertexAttribArray@4 imported in function "protected: void __thiscall Box2DDraw::drawPrimitives(bool,bool,int,struct b2Color const &)" (?drawPrimitives@Box2DDraw@@IAEX_N0HABUb2Color@@@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glDisableVertexAttribArray@4 imported in function "public: void __thiscall std::_String_alloc<0,struct std::_String_base_types<char,class std::allocator<char> > >::_Free_proxy(void)" (?_Free_proxy@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAEXXZ)
+     1>Box2DDebugDraw.obj : warning LNK4217: locally defined symbol _glEnableVertexAttribArray@4 imported in function "protected: void __thiscall Box2DDraw::drawPrimitives(bool,bool,int,struct b2Color const &)" (?drawPrimitives@Box2DDraw@@IAEX_N0HABUb2Color@@@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glEnableVertexAttribArray@4 imported in function "public: void __thiscall std::_String_alloc<0,struct std::_String_base_types<char,class std::allocator<char> > >::_Free_proxy(void)" (?_Free_proxy@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAEXXZ)
+     1>Box2DDebugDraw.obj : warning LNK4217: locally defined symbol _glVertexAttribPointer@24 imported in function "protected: void __thiscall Box2DDraw::drawPrimitives(bool,bool,int,struct b2Color const &)" (?drawPrimitives@Box2DDraw@@IAEX_N0HABUb2Color@@@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glVertexAttribPointer@24 imported in function "public: void __thiscall std::_String_alloc<0,struct std::_String_base_types<char,class std::allocator<char> > >::_Free_proxy(void)" (?_Free_proxy@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAEXXZ)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glAttachShader@8 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createProgram(int,int,class oxygine::VertexDeclarationGL const *)" (?createProgram@ShaderProgramGL@oxygine@@SAIHHPBVVertexDeclarationGL@2@@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glBindAttribLocation@12 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createProgram(int,int,class oxygine::VertexDeclarationGL const *)" (?createProgram@ShaderProgramGL@oxygine@@SAIHHPBVVertexDeclarationGL@2@@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glCompileShader@4 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createShader(unsigned int,char const *,char const *,char const *)" (?createShader@ShaderProgramGL@oxygine@@SAIIPBD00@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glCreateProgram@0 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createProgram(int,int,class oxygine::VertexDeclarationGL const *)" (?createProgram@ShaderProgramGL@oxygine@@SAIHHPBVVertexDeclarationGL@2@@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glCreateShader@4 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createShader(unsigned int,char const *,char const *,char const *)" (?createShader@ShaderProgramGL@oxygine@@SAIIPBD00@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glDeleteProgram@4 imported in function "public: virtual __thiscall oxygine::ShaderProgramGL::~ShaderProgramGL(void)" (??1ShaderProgramGL@oxygine@@UAE@XZ)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glGetShaderiv@12 imported in function "void __cdecl oxygine::printShaderInfoLog(unsigned int)" (?printShaderInfoLog@oxygine@@YAXI@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glGetShaderInfoLog@16 imported in function "void __cdecl oxygine::printShaderInfoLog(unsigned int)" (?printShaderInfoLog@oxygine@@YAXI@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glGetUniformLocation@8 imported in function "public: int __thiscall oxygine::ShaderProgramGL::getUniformLocation(char const *)const " (?getUniformLocation@ShaderProgramGL@oxygine@@QBEHPBD@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4049: locally defined symbol _glGetUniformLocation@8 imported
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glLinkProgram@4 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createProgram(int,int,class oxygine::VertexDeclarationGL const *)" (?createProgram@ShaderProgramGL@oxygine@@SAIHHPBVVertexDeclarationGL@2@@Z)
+     1>oxygine_vs2013_d.lib(ShaderProgramGL.obj) : warning LNK4217: locally defined symbol _glShaderSource@16 imported in function "public: static unsigned int __cdecl oxygine::ShaderProgramGL::createShader(unsigned int,char const *,char const *,char const *)" (?createShader@ShaderProgramGL@oxygine@@SAIIPBD00@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glActiveTexture@4 imported in function "public: virtual void __thiscall oxygine::VideoDriverGLES20::setTexture(int,class oxygine::intrusive_ptr<class oxygine::NativeTexture>)" (?setTexture@VideoDriverGLES20@oxygine@@UAEXHV?$intrusive_ptr@VNativeTexture@oxygine@@@2@@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glUseProgram@4 imported in function "public: virtual __thiscall oxygine::VideoDriverGLES20::~VideoDriverGLES20(void)" (??1VideoDriverGLES20@oxygine@@UAE@XZ)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glUniform1f@8 imported in function "public: virtual void __thiscall oxygine::VideoDriverGLES20::setUniform(char const *,float)" (?setUniform@VideoDriverGLES20@oxygine@@UAEXPBDM@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glUniform1i@8 imported in function "public: virtual void __thiscall oxygine::VideoDriverGLES20::setUniformInt(char const *,int)" (?setUniformInt@VideoDriverGLES20@oxygine@@UAEXPBDH@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glUniform4fv@12 imported in function "public: virtual void __thiscall oxygine::VideoDriverGLES20::setUniform(char const *,class oxygine::VectorT4<float> const *,int)" (?setUniform@VideoDriverGLES20@oxygine@@UAEXPBDPBV?$VectorT4@M@2@H@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGLES20.obj) : warning LNK4217: locally defined symbol _glUniformMatrix4fv@16 imported in function "public: virtual void __thiscall oxygine::VideoDriverGLES20::setUniform(char const *,class oxygine::MatrixT<float> const *)" (?setUniform@VideoDriverGLES20@oxygine@@UAEXPBDPBV?$MatrixT@M@2@@Z)
+     1>oxygine_vs2013_d.lib(VideoDriverGL.obj) : warning LNK4217: locally defined symbol _glBindFramebuffer@8 imported in function "public: virtual void __thiscall oxygine::VideoDriverGL::setRenderTarget(class oxygine::intrusive_ptr<class oxygine::NativeTexture>)" (?setRenderTarget@VideoDriverGL@oxygine@@UAEXV?$intrusive_ptr@VNativeTexture@oxygine@@@2@@Z)
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4049: locally defined symbol _glBindFramebuffer@8 imported
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4217: locally defined symbol _glCompressedTexImage2D@32 imported in function "public: virtual void __thiscall oxygine::NativeTextureGLES::init(class oxygine::ImageData const &,bool)" (?init@NativeTextureGLES@oxygine@@UAEXABVImageData@2@_N@Z)
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4217: locally defined symbol _glDeleteFramebuffers@8 imported in function "public: virtual void __thiscall oxygine::NativeTextureGLES::release(void)" (?release@NativeTextureGLES@oxygine@@UAEXXZ)
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4217: locally defined symbol _glGenFramebuffers@8 imported in function "public: virtual void __thiscall oxygine::NativeTextureGLES::init(int,int,enum oxygine::TextureFormat,bool)" (?init@NativeTextureGLES@oxygine@@UAEXHHW4TextureFormat@2@_N@Z)
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4217: locally defined symbol _glCheckFramebufferStatus@4 imported in function "public: virtual void __thiscall oxygine::NativeTextureGLES::init(int,int,enum oxygine::TextureFormat,bool)" (?init@NativeTextureGLES@oxygine@@UAEXHHW4TextureFormat@2@_N@Z)
+     1>oxygine_vs2013_d.lib(NativeTextureGLES.obj) : warning LNK4217: locally defined symbol _glFramebufferTexture2D@20 imported in function "public: virtual void __thiscall oxygine::NativeTextureGLES::init(int,int,enum oxygine::TextureFormat,bool)" (?init@NativeTextureGLES@oxygine@@UAEXHHW4TextureFormat@2@_N@Z)
+         DemoBox2D_vs2013.vcxproj -> C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\Debug\DemoBox2D.exe
+     1>Done Building Project "C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\DemoBox2D_vs2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.80

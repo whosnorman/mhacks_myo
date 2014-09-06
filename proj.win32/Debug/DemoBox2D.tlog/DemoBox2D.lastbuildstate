@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Debug|Win32|C:\Users\Matt\Desktop\oxygine-framework-with-sdl\oxygine-framework\examples\DemoBox2D\proj.win32\|
